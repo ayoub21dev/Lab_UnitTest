@@ -22,4 +22,11 @@ class CalculServiceTest extends TestCase
         // We expect the result to be 30
         $this->assertEquals(30, $result);
     }
+
+     public function test_it_can_handle_negative_numbers()
+     {
+    $service = new CalculService();
+    $this->assertEquals(-5, $service->sum(-10, 5));
+    }
+    
 }
